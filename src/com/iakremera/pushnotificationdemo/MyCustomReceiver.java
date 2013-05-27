@@ -30,7 +30,7 @@ public class MyCustomReceiver extends BroadcastReceiver {
 			{
 				String action = intent.getAction();
 				Log.d(TAG, "got action " + action );
-				if (action.equals("com.iakremera.pushdemo.UPDATE_STATUS"))
+				if (action.equals("com.iakremera.pushnotificationdemo.UPDATE_STATUS"))
 				{
 					String channel = intent.getExtras().getString("com.parse.Channel");
 					JSONObject json = new JSONObject(intent.getExtras().getString("com.parse.Data"));
