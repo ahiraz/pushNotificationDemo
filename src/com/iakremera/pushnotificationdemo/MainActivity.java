@@ -23,7 +23,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		Parse.initialize(this, "SWwRdRKuwXHOgfDXrvlXcfPNygmoodJrvBqOfLGk", "eQbjEd90xXPdzoGqMKn7uUcBxHRFRvJmQa5VaoyY");
+		Parse.initialize(this, Application key,client key);
 		PushService.setDefaultPushCallback(this, MainActivity.class);
 
 		ParseInstallation.getCurrentInstallation().saveInBackground();
